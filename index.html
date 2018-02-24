@@ -8,5 +8,28 @@
     <link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta22/shoelace.css">
   </head>
   <body>
+    <main class="container-fluid">
+      <form action="">
+        <fieldset>
+          <legend>Add a Book</legend>
+          <div>
+            <label for="title">Title</label>
+            <input type="text" name='title' id='title' required autofocus>
+          </div>
+          <div class="">
+            <label for="author">Author</label>
+            <input type="text" name='author' id='author' required autofocus>
+          </div>
+          <div class="">
+            <label for="pages">Pages</label>
+            <input type="number" name='pages' id='pages' required autofocus>
+          </div>
+          <div class="">
+            <label for="read">Read</label>
+            <input type="checkbox" name='read' id='read'>
+          </div>
+        </fieldset>
+      </form>
+    </main>
   </body>
 </html>
