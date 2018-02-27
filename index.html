@@ -6,11 +6,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta22/shoelace.css">
+    <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
     <main class="container-fluid">
       <div class="row">
-        <form action="" class='col-4'>
+        <div class="col-2">
+          <p id='active' class="button" onClick='activeForm()'>Add Book</p>
+        </div>
+      </div>
+      <div class="row">
+        <form action="" id='addBook' class='col-4 inactive'>
           <fieldset>
             <legend>Add a Book</legend>
             <div>
@@ -29,9 +35,16 @@
               <label for="read">Read</label>
               <input type="checkbox" name='read' id='read'>
             </div>
+            <p class="button" onClick='addBookToLibrary()'>submit</p>
           </fieldset>
         </form>
+        <div class='col-8'>
+          <div id='library' class="row">
+
+          </div>
+        </div>
       </div>
     </main>
+    <script src='app/index.js'></script>
   </body>
 </html>

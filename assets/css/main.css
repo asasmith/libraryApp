@@ -1,0 +1,11 @@
+main {
+  padding-top: 2em;
+}
+
+.inactive {
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
+}

@@ -2,10 +2,19 @@
   "name": "library-app",
   "version": "1.0.0",
   "description": "basic book tracking app built for The Odin Projects JS course",
-  "main": "/app/index.js",
+  "main": "index.js",
   "author": "Asa Smith <smith.asa.la@gmail.com>",
   "license": "MIT",
-  "dependencies": {
+  "ava": {
+    "verbose": "true"
+  },
+  "scripts": {
+    "test": "npm run lint && nyc ava",
+    "lint": "standard | snazzy"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "jsdom": "^11.6.2",
     "nyc": "^11.4.1",
     "snazzy": "^7.0.0",
     "standard": "^11.0.0"
